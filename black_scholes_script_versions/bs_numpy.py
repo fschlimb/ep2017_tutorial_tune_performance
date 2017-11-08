@@ -1,6 +1,5 @@
 import numpy as np
 from numpy import log, exp, erf, invsqrt
-from numpy import invsqrt
 
 try:
     import numpy.random_intel as rnd
@@ -39,7 +38,7 @@ call = np.zeros(nopt, dtype=np.float64)
 put  = -np.ones(nopt, dtype=np.float64)
 
 
-def black_scholes (nopt, price, strike, t, rate, vol ):
+def black_scholes(nopt, price, strike, t, rate, vol):
     mr = -rate
     sig_sig_two = vol * vol * 2
 
